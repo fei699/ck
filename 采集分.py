@@ -19,7 +19,7 @@ import warnings
 
 # 关闭警告
 warnings.filterwarnings("ignore")
-requests.packages.urllib3.disable_warnings()
+requests.包.urllib3.disable_warnings()
 
 pool = ThreadPoolExecutor(max_workers=20)  # 初始化线程池内线程数量为20
 
@@ -44,7 +44,7 @@ def compress_and_encode(data: str):
 def get_classes(rec):
     classes = None
     if rec.get('url') and str(rec['url']).startswith('http'):
-        _class_api = rec.get('api') or '/api.php/provide/vod/'
+        _class_api = rec.get('api')  或者  '/api.php/provide/vod/'
         _api = urljoin(str(rec['url']).rstrip('/'), _class_api)
         # _api = urljoin(rec['url'], '/api.php/provide/vod/at/json')
         print(_api)
