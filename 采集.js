@@ -5,8 +5,8 @@
  * [{"name":"暴风资源","url":"https://bfzyapi.com","parse_url":""},{"name":"飞刀资源","url":"http://www.feidaozy.com","parse_url":""},{"name":"黑木耳资源","url":"https://www.heimuer.tv","parse_url":""}]
  */
 var rule = {
-    title: '采集之王[合]',
-    author: '道长',
+    标题: '采集之王[合]',
+    作者: '道长',
     version: '20240621 beta5',
     host: '',
     homeTid: '', // 首页推荐。一般填写第一个资源站的想要的推荐分类的id.可以空
